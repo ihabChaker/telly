@@ -12,9 +12,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.telly.dao.FormValidationGroup;
+<<<<<<< HEAD
 import com.telly.dao.Reserve;
 import com.telly.dao.User;
 import com.telly.service.ReserveService;
+=======
+import com.telly.dao.User;
+>>>>>>> gestion-util
 import com.telly.service.UserService;
 
 
@@ -25,6 +29,7 @@ public class UserController {
 	@Autowired
 	UserService userService;
 	
+<<<<<<< HEAD
 	@Autowired
 	ReserveService reserveService;
 
@@ -38,6 +43,8 @@ public class UserController {
 		return "loggedout";
 	}
 	
+=======
+>>>>>>> gestion-util
 	
 	@RequestMapping("/createaccount")
 	public String createAccount(Model model, Principal principal) {
@@ -63,6 +70,7 @@ public class UserController {
 
 	}
 
+<<<<<<< HEAD
 	@RequestMapping(value = "/reservebook", method = RequestMethod.POST)
 	public String createReserveBook(@Validated(FormValidationGroup.class) Reserve reserve, BindingResult result, Principal principal) {
 		
@@ -95,6 +103,8 @@ public class UserController {
 		return "home";
 
 	}
+=======
+>>>>>>> gestion-util
 	
 
 }
